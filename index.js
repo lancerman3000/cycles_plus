@@ -7,7 +7,7 @@ console.log(`// 1. Есть массив состоящий из N цифр.Не
 let array0plus = [];
 for (let i = 0; i < array0.length; i++) {
     if (!(array0[i] % 2)) {
-        array0plus.push(array0[i])
+        array0plus.push(array0[i]);
     }
 }
 console.log('only even numbers');
@@ -21,11 +21,11 @@ let res1;
 for (let n = 0; n < array1.length; n++) {
     for (let i = 0; i < array1.length - 1 - n; i++) {
         if (array1[i] > array1[i + 1]) {
-            [array1[i], array1[i + 1]] = [array1[i + 1], array1[i]]
+            [array1[i], array1[i + 1]] = [array1[i + 1], array1[i]];
         }
     }
 }
-res1 = array1[0] + array1[array1.length - 1]
+res1 = array1[0] + array1[array1.length - 1];
 
 console.log('first and last = ' + res1);
 console.log();
@@ -35,7 +35,7 @@ console.log(`// 3. Есть массив состоящий из N цифр. Н�
 let array2 = array0.slice();
 let array2plus = [];
 for (let n = array2.length - 1; n >= 0; n--) {
-    array2plus.push(array2[n])
+    array2plus.push(array2[n]);
 }
 console.log('forward');
 console.log(array2);
@@ -64,13 +64,13 @@ let array4 = array0.slice();
 let array4plus = [];
 for (let i = 0; i < array4.length; i++) {
     if (!(array4[i] % 2) && (array4[i] < 0)) {
-        array4plus.push(array4[i] / 1.5 * -1.9)
+        array4plus.push(array4[i] / 1.5 * -1.9);
     } else if (!(array4[i] % 2)) {
-        array4plus.push(array4[i] / 1.5)
+        array4plus.push(array4[i] / 1.5);
     } else if (array4[i] < 0) {
-        array4plus.push(array4[i] * (-1.9))
+        array4plus.push(array4[i] * (-1.9));
     } else {
-        array4plus.push(array4[i])
+        array4plus.push(array4[i]);
     }
 
 }
